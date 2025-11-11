@@ -1,102 +1,90 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&family=Stack+Sans+Notch&family=Stack+Sans+Text:wght@500&display=swap" rel="stylesheet">
-<style>
-body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: white;
-            padding-top: 90px;
-            overflow-x: hidden;
-        }
-.logo {
-    padding-left: 200px;
-    padding-right: 800px;
-}
-
-.logo img {
-    width: 130px;
-    height: auto;
-    vertical-align: middle;
-    margin: 0; 
-    display: block;
-}
-.topnav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #fd392d;
-            height: 150px;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-            z-index: 1000;
-        }
-
-   .topnav ul {
-    margin-left: auto; 
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
-
-        .topnav li {
-            display: inline-block;
-        }
-
-        .topnav a {
-            display: block;
-            color: #FFFFFF;
-            text-align: center;
-            padding: 0 20px;
-            text-decoration: none;
-            font-size: 30px;
-            line-height: 90px;
-            font-family: "Equilibrium Serif";
-        }
-
-        .topnav a:hover {
-            color: black;
-        }
-
-        @media screen and (max-width: 1000px) {
-            .topnav a {
-                padding: 0 10px;
-                font-size: 16px;
-                line-height: 60px;
-            }
-        }
-
-            
-.stack-sans-text-uniquifier {
-  font-family: "Stack Sans Text", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&family=Stack+Sans+Notch&family=Stack+Sans+Text:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: white;
+      padding-top: 90px;
+      overflow-x: hidden;
+    }
+    .logo {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .logo img {
+      width: 130px;
+      height: auto;
+      vertical-align: middle;
+      margin: 0; 
+      display: block;
+    }
+    .topnav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fd392d;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+    .topnav ul {
+      margin-left: auto; 
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    .topnav li {
+      display: inline-block;
+    }
+    .topnav a {
+      display: block;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 0 20px;
+      text-decoration: none;
+      font-size: 30px;
+      line-height: 90px;
+      font-family: "Stack Sans Text", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+    }
+    .topnav a:hover {
+      color: black;
+    }
+    @media screen and (max-width: 1000px) {
+      .topnav a {
+        padding: 0 10px;
+        font-size: 16px;
+        line-height: 60px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-       <div class="topnav" id="myTopnav">
+  <div class="topnav" id="myTopnav">
     <div class="logo">
-                <a href="index.html">
-    <img src="Benzene.JPG" alt="Logo">
-</a>
+      <a href="index.html">
+        <img src="Benzene.JPG" alt="Logo">
+      </a>
     </div>
-<ul>
-<li>
-    <a href="index.html" class="stack-sans-text-uniquifier"><span id="nav-home">Channel</span></a>
-    <a href="about.html" class="stack-sans-text-uniquifier"><span id="nav-about">About</span></a>
-    <a href="product.html" class="stack-sans-text-uniquifier"><span id="nav-product">Product</span></a>
-    <div class="socialiconnav">
+    <ul>
+      <li><a href="index.html"><span id="nav-home">Channel</span></a></li>
+      <li><a href="about.html"><span id="nav-about">About</span></a></li>
+      <li><a href="product.html"><span id="nav-product">Product</span></a></li>
+      <li class="socialiconnav">
         <a href="https://www.youtube.com/@ChewAHerb"><i class="fa-brands fa-youtube"></i></a>
-</li>
-</ul>
-    </div>
+      </li>
+    </ul>
+  </div>
 </body>
 </html>
