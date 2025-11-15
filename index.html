@@ -72,6 +72,88 @@
     font-size: 2em;
     vertical-align: middle;
 }
+    }
+footer {
+height: 75vh;
+background-color: #0d254e;
+z-index: 1;
+}
+      .socialIcons a:nth-child(1) i {
+    font-size: 3em;
+    color: #FF0000;
+    opacity: 0.9;
+}
+.socialIcons a:nth-child(2) i {
+    font-size: 3em;
+    color: #3b5998;
+    opacity: 0.9;
+}
+.socialIcons a:nth-child(3) i {
+    font-size: 3em;
+    color: black;
+    opacity: 0.9;
+}
+      .footerContainer{
+width: 100%;
+padidng: 70px 30px 20px;
+}
+      .socialIcons{
+display: flex;
+justify-content: center;
+}
+      .socialIcons a{
+text-decoration: none;
+padding: 10px;
+background-color: white;
+margin: 10px;
+margin-top: 310px;
+border-radius: 50%;
+}
+      .socialIcons a:hover{
+background-color: #111;
+transition: 0.5s;
+}
+      .socialIcons a:hover i {
+color: white;
+transition: 0.5s;
+}
+      .footerNav{
+margin: 30px 0;
+}
+      .footerNav ul{
+display: flex;
+justify-content: center;
+list-style-type:none;
+}
+
+      .footerNav ul li a{
+color: white;
+margin-right: 40px;
+margin-left: 40px;
+text-decoration:none;
+font-size:2em;
+opacity:0.7;
+transition:0.5s;
+font-family: 'Merriweather', serif;
+}
+      .footerNav ul li a:hover {
+opacity: 1;
+}
+.footerBottom{
+background-color: #091b3b;
+padding: 20px;
+text-align: center;
+}
+.footerBottom p{
+color: white;
+}
+.designer{
+opacity:0.7;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 400;
+magin: 0px 5px;
+}
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -91,5 +173,27 @@
       </li>
     </ul>
   </div>
+  <footer class="hidden">
+   <div style="height: 6.25vh"></div>
+   <div class="footerContainer">
+   <div class="socialIcons">
+     <a href="https://www.youtube.com/@ChewAHerb"><i class="fa-brands fa-youtube"></i></a>
+<a href=""><i class="fa-brands fa-facebook"></i></a>
+<a href=""><i class="fa-brands fa-instagram"></i></a>
+   </div>
+<div style="height: 2.5vh"></div>
+   <div class="footerNav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="product.html">Product</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+</div>
+  </footer>
+  <div class="footerBottom">
+<p>Copyright &copy;2025; Designed by <span class="designer">Group1</p>
+</div>
 </body>
 </html>
