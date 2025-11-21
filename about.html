@@ -181,7 +181,26 @@
       color: white; 
       padding: 0 20px;
     }
-
+.hero-title {
+  font-family: "Science Gothic", Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "wdth" 100, "CTRS" 0;
+  font-size: clamp(1.6rem, 4.5vw, 3.2rem); 
+  line-height: 1.05;
+  margin: 0.35rem 0 0.6rem;
+  text-shadow:
+    0 4px 18px rgba(0,0,0,0.88),
+    0 0 22px #fd392d,
+    0 0 10px #ffc13c;
+  letter-spacing: 0.03em;
+  background: rgba(0,0,0,0.13);
+  display: block;      
+  padding: 0.09em 0.21em;
+  border-radius: 8px;
+  text-align: center;
+}
     .hero h1 {
       font-size: 3vw;
       font-family: "Metropolis Regular";
@@ -365,7 +384,7 @@
     <div class="main-bg-overlay"></div>
     <div class="main-bg-flame"></div>
     <div style="height: 150px;"></div>
-    <h1 style="text-align:center;">Meet Our Team</h1>
+    <h1 class="hero-title">Meet Our Team</h1>
     <div class="team-grid">
       <div class="team-member">
         <img src="downloadngw.jpg" alt="Member 1">
