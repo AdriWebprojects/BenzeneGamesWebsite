@@ -135,22 +135,30 @@
       pointer-events: none;
       z-index: 1;
     }
-    .hero-rgboverlay {
-      position: absolute;
-      inset: 0;
-      z-index: 2;
-      pointer-events: none;
-      mix-blend-mode: screen;
-      opacity: 0.37;
-      background: linear-gradient(120deg, #ff00cc, #3333ff, #00ffcc, #ff00cc 85%);
-      background-size: 240% 240%;
-      animation: rgbmove 6s linear infinite;
-    }
-    @keyframes rgbmove {
-      0% { background-position: 0% 50%;}
-      50% { background-position: 100% 51%;}
-      100% { background-position: 0% 50%;}
-    }
+   .hero-rgboverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0.30;
+  background:
+    radial-gradient(ellipse at 55% 60%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.25) 90%),
+    linear-gradient(
+      120deg,
+      #ff5313 0%,    /* Benzene Orange */
+      #ffd36c 45%,   /* Gold highlight */
+      #fd392d 80%,   /* Brand Red/Orange */
+      #fff4e6 100%   /* Soft white at end */
+    );
+  background-size: 220% 220%;
+  animation: benzeneFlare 7s linear infinite;
+}
+@keyframes benzeneFlare {
+  0% { background-position: 0% 55%;}
+  50% { background-position: 100% 65%;}
+  100% { background-position: 0% 55%;}
+}
     .hero-slide > .hero-overlay,
     .hero-slide > .hero-rgboverlay {
       pointer-events: none;
