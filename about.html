@@ -88,12 +88,20 @@
       background: url('download (7).jpg') center center / cover no-repeat;
       overflow: hidden;
     }
-
+    /* --- Begin: HERO-STYLE overlays for main-bg --- */
+    .main-bg-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(30, 12, 3, 0.30); /* This matches the hero-overlay! */
+      z-index: 2;
+      pointer-events: none;
+    }
     .main-bg-flame {
       position: absolute;
       inset: 0;
-      z-index: 1;
+      z-index: 3;
       pointer-events: none;
+      mix-blend-mode: lighten;
       opacity: 0.42;
       background:
         radial-gradient(ellipse at 60% 70%, rgba(255,200,80,0.45) 0%, rgba(255,60,0,0.29) 45%, rgba(255,0,0,0.20) 78%, rgba(0,0,0,0.00) 97%),
@@ -109,26 +117,16 @@
       background-size: 200% 200%;
       animation: flames 5s linear infinite;
     }
-
     @keyframes flames {
       0% { background-position: 0% 75%, 100% 0%; }
       50% { background-position: 100% 25%, 0% 100%; }
       100% { background-position: 0% 75%, 100% 0%; }
     }
-
-    
-    .main-bg-overlay {
-      position: absolute;
-      inset: 0;
-      background: rgba(30, 12, 3, 0.62); /* Increased opacity for clarity */
-      z-index: 3;
-      pointer-events: none;
-    }
-
-    .main-bg > *:not(.main-bg-flame):not(.main-bg-overlay) {
+    .main-bg > *:not(.main-bg-overlay):not(.main-bg-flame) {
       position: relative;
       z-index: 4;
     }
+    /* --- End: HERO-STYLE overlays for main-bg --- */
 
     .team-grid {
       display: grid;
@@ -367,9 +365,9 @@
 
   <!-- MAIN CONTENT BACKGROUND WRAPPER -->
   <div class="main-bg">
-    <!-- Added correct overlay stacking -->
-    <div class="main-bg-flame"></div>
+    <!-- These overlays now match your hero! -->
     <div class="main-bg-overlay"></div>
+    <div class="main-bg-flame"></div>
     <div style="height: 150px;"></div>
     <h1 style="text-align:center;">Meet Our Team</h1>
     <div class="team-grid">
@@ -450,4 +448,4 @@ We want to create streams that are exciting, unpredictable, and full of energy. 
     <p>Copyright &copy;2025; Designed by <span class="designer">Group5</span></p>
   </div>
 </body>
-</html>
+</html> 
