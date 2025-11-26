@@ -45,12 +45,13 @@
     .socialiconnav a i { font-size: 2em; vertical-align: middle; }
 
 .main-bg-video-container {
-  position: absolute;
+  position: fixed; 
   left: 0;
   width: 100vw;
   overflow: hidden;
   z-index: 0;
   background: transparent;
+  pointer-events: none; 
 }
 
 #bgvid {
@@ -196,11 +197,13 @@ function resizeBgVideo() {
   const container = document.querySelector('.main-bg-video-container');
   if (!nav || !footer || !container) return;
 
-  const navBottom = nav.getBoundingClientRect().bottom + window.scrollY;
-  const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+  const navHeight = nav.offsetHeight;
+  const footerTop = footer.getBoundingClientRect().top;
+  let height = footerTop - navHeight;
+  if (height < 0) height = 0;
 
-  container.style.top = navBottom + 'px';
-  container.style.height = (footerTop - navBottom) + 'px';
+  container.style.top = navHeight + 'px';
+  container.style.height = height + 'px';
 }
 window.addEventListener('resize', resizeBgVideo);
 window.addEventListener('DOMContentLoaded', resizeBgVideo);
