@@ -211,62 +211,50 @@
       margin: 0; 
     }
 
-    .who-section, .what-section, .mission-section {
-      display: flex;
-      align-items: center; 
-      justify-content: center; 
-      margin: 0;
-      width: 100%;
-      min-height: 40vh;
-    }
-
-    .who-section h1, .what-section h1, .mission-section h1 {
-      margin: 0;
-      font-size: 3em;
-      color: white;
-    }
-
-.who-section h1,
-.what-section h1,
-.mission-section h1 {
-  font-family: 'Science Gothic', Arial, Helvetica, sans-serif;
-  font-size: clamp(2rem, 5vw, 2.8rem);
-  font-weight: 800;
-  color: white;
-  text-align: center;
-  margin-bottom: 16px;
-  text-shadow: 0 4px 18px rgba(0,0,0,0.88), 0 0 22px #fd392d;
+.who-section, .what-section, .mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  min-height: 40vh;
 }
 
-.who-section p,
-.what-section p,
-.mission-section p {
-  font-family: 'Oswald', Arial, Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #222;
-  text-align: center;
-  margin: 0 auto 18px auto;
-  padding: 0 1rem;
-  max-width: 600px;
-  background: transparent;
-  box-shadow: none;
-  text-shadow: none;
-  border-radius: 0;
-}
 
 .rcorners1, .rcorners2, .rcorners3 {
-  border-radius: 15px;
-  padding: 20px;
-  width: 80vw;
+  background: rgba(255,255,255,0.13);
+  border: 1.5px solid rgba(255,255,255,0.20);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 36px 28px;
   max-width: 650px;
   margin: 0 auto 40px auto;
   box-sizing: border-box;
+  transition: box-shadow 0.2s;
 }
-.rcorners1 { background: #f9721f; }
-.rcorners2 { background: #f9df29; }
-.rcorners3 { background: #ff1b00; }
+
+
+.rcorners1 h1, .rcorners2 h1, .rcorners3 h1 {
+  font-family: 'Science Gothic', Arial, Helvetica, sans-serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #fff;
+  text-shadow: 0 8px 36px #fd392d, 0 0 16px #fff, 0 0 3px #0009;
+  margin-bottom: 12px;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+.rcorners1 p, .rcorners2 p, .rcorners3 p {
+  color: #fff;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem; 
+  line-height: 1.65;
+  margin-top: 0;
+  text-align: center;
+}
     
     footer {
       min-height: 75vh;
