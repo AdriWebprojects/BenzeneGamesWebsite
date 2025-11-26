@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&family=Stack+Sans+Notch&family=Stack+Sans+Text:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&family=Science+Gothic:wght@100..900&family=Stack+Sans+Notch&family=Stack+Sans+Text:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
   <style>
     html, body {
       width: 100%;
@@ -219,63 +220,54 @@
       min-height: 40vh;
     }
 
-    .rcorners1 img, .rcorners2 img, .rcorners3 img {
-      margin: 0;
-      width: 60px;
-      height: auto;
-    }
     .who-section h1, .what-section h1, .mission-section h1 {
       margin: 0;
       font-size: 3em;
       color: white;
     }
-    .who-section p, .what-section p, .mission-section p {
-  font-family: "Science Gothic", Arial, Helvetica, sans-serif;
-  font-optical-sizing: auto;
+
+.who-section h1,
+.what-section h1,
+.mission-section h1 {
+  font-family: 'Science Gothic', Arial, Helvetica, sans-serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
   font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "slnt" 0, "wdth" 100, "CTRS" 0;
-  font-size: clamp(1.3rem, 2.7vw, 2.2rem);
-  line-height: 1.05;
-  margin: 0.35rem 0 0.6rem;
-  color: #f6f6f6;
-  text-shadow:
-    0 4px 18px rgba(0,0,0,0.88),
-    0 0 22px #fd392d,
-    0 0 10px #ffc13c;
-  letter-spacing: 0.03em;
+  color: white;
   text-align: center;
+  margin-bottom: 16px;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.88), 0 0 22px #fd392d;
 }
-    }
-    .rcorners1, .rcorners2, .rcorners3 {
-      border-radius: 15px;
-      padding: 10px;  
-      width: 80vh;
-    }
-    .rcorners1{
-      background-color: #f9721f; 
-      min-height: 30vh;
-      text-align: center;
-    }
-    .rcorners2{
-      background-color: #f9df29;
-      min-height: 32vh;
-      text-align: center;
-    }
-    .rcorners3{
-      background-color: #ff1b00;
-      min-height: 30vh;
-      text-align: center;
-    }
-    .rcorners1 p, .rcorners2 p, .rcorners3 p {
-  text-align: justify;
+
+.who-section p,
+.what-section p,
+.mission-section p {
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+  text-align: center;
+  margin: 0 auto 18px auto;
+  padding: 0 1rem;
+  max-width: 600px;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0;
+}
+
+.rcorners1, .rcorners2, .rcorners3 {
   border-radius: 15px;
-  padding: 10px;
-  width: 80vh;
-  max-width: 600px;  
-  margin: 0 auto;       
+  padding: 20px;
+  width: 80vw;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+  box-sizing: border-box;
 }
-}
+.rcorners1 { background: #f9721f; }
+.rcorners2 { background: #f9df29; }
+.rcorners3 { background: #ff1b00; }
+    
     footer {
       min-height: 75vh;
       position: relative;
@@ -438,14 +430,12 @@
     </div>
     <section class="who-section">
       <div class="rcorners1">
-        <img src="472373179_583072744324717_6566046115389369536_n-removebg-preview (1).png">
         <h1>Who we are</h1>
         <p>We're Benzene Games! A gaming content creation group consisting of 6 members. We do fun challenges, and explore different games. Will six sides form to make a great team? Stick around and find out!</p>
       </div>
     </section>
     <section class="what-section">
       <div class="rcorners2">
-        <img src="472924252_2272473079798286_3954083799053601738_n-removebg-preview (1).png">
         <h1>What we do </h1>
         <p>
         We make gaming content that’s fun to watch and fun to create. From challenges to game explorations to spontaneous chaos, we’re always trying something new. If it looks fun, we’re probably doing it and if we haven’t yet, we will.
@@ -454,7 +444,6 @@
     </section>
     <section class="mission-section">
       <div class="rcorners3">
-        <img src="Capture.5454544-removebg-preview (1).png">
         <h1>Our Mission</h1>
         <p>
        Our mission is simple: bring people together through fun, entertaining game challenges.
